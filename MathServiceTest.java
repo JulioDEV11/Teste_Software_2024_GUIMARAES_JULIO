@@ -17,15 +17,15 @@ public class MathServiceTest {
     }
 
     @Test
-    public void testMultiply() {
-      
+    public void testMultiplyCalledAtLeastTwice() {
+        
         when(multiplierMock.multiply(10, 10)).thenReturn(100);
 
-        int result = mathService.multiply(10, 10);
+        
+        mathService.multiply(10, 10);
+        mathService.multiply(10, 10);
 
-        assertEquals(100, result);
-
-        // Verifica quantas vezes o método multiply foi chamado com os parâmetros especificados
-        verify(multiplierMock, times(1)).multiply(10, 10);
+        // Verifica se o método multiply do mock foi chamado pelo menos duas vezes!
+        verify(multiplierMock, atLeast(2)).multiply(10, 10);
     }
 }
