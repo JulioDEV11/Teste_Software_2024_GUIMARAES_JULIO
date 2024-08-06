@@ -19,6 +19,8 @@ import static org.mockito.Mockito.verify; - Verifica se um método foi chamado n
 
 2 - Realizar testes utilizando os métodos importados:
 
+Multiplier.java: Código em que o método de multiplicação para dois atributos é inicializado: 
+
 MathServiceTest.java: Código em que os testes são realizados - https://github.com/JulioDEV11/Teste_Software_2024_GUIMARAES_JULIO/blob/main/MathServiceTest.java
 
 
