@@ -1,8 +1,6 @@
-import static org.mockito.Mockito.*;
-import static org.junit.Assert.*;
-import org.junit.Before;
-import org.junit.Test;
-import org.mockito.Mockito;
+import static org.mockito.Mockito.atLeast;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
 
 public class MathServiceTest {
 
@@ -27,6 +25,7 @@ public class MathServiceTest {
 
         // Verifica se o método multiply do mock foi chamado pelo menos duas vezes!
         verify(multiplierMock, atLeast(2)).multiply(10, 10);
+        
         verify(multiplierMock, times(3)).multiply(10,10);
     }
 }
