@@ -14,7 +14,9 @@ Para solucionar este problema, basta utilizar o VerificationMode de forma corret
 1 - Importar os métodos necessários para o Mockito:
 
 import static org.mockito.Mockito.atLeast; - Verifica se o método foi chamado pelo menos uma quantidade específica de vezes. 
+
 import static org.mockito.Mockito.times; - Verifica se um método foi chamado exatamente um número específico de vezes.
+
 import static org.mockito.Mockito.verify; - Verifica se um método foi chamado no mock. 
 
 2 - Realizar testes utilizando os métodos importados:
