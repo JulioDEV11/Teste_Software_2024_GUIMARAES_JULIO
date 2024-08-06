@@ -1,17 +1,11 @@
-ATIVIDADE 1 - ARIEL LIMA ABADE BANDEIRA: How do I print to console in pytest?
-REPOSITÓRIO DO PROJETO: https://github.com/arielzz66/Teste_Software_2024_BANDEIRA_ARIEL
+ATIVIDADE 1 - JÚLIO GEOVANI OLIVEIRA GUIMARÃES: How to verify a method is called two times with mockito verify()?
 
-Problema
+REPOSITÓRIO DO PROJETO: https://github.com/JulioDEV11/Teste_Software_2024_GUIMARAES_JULIO
 
-Este projeto aborda a dificuldade de imprimir logs do sistema (saídas da função print()) durante a execução de testes com o Pytest em Python. A visualização desses logs é crucial para entender o fluxo de execução dos testes e identificar possíveis falhas.
+Problema:
 
-O problema original, publicado no Stack Overflow, envolvia um cenário de testes em uma classe Blogger que herda de Site, buscando verificar a correta recuperação de posts e links associados a um usuário específico. No entanto, a execução padrão do Pytest não exibia as mensagens de log desejadas.
+Verificação se um método foi chamado exatamente duas vezes usando o Mockito. No problema em específico, o programador 
+está recebendo uma exceção que indica que o método foi chamado mais vezes do que o esperado. 
 
-Objetivos dos Testes
+A solução:
 
-Confirmar se a classe Blogger é uma subclasse de Site.
-Verificar se a chamada ao dono do blog retorna corretamente os posts associados ao usuário "alice".
-Imprimir o nome do usuário e seus links associados para validação visual.
-Solução
-
-A solução encontrada foi executar o Pytest com a opção -s (shortcut para --capture=no):
